@@ -31,6 +31,10 @@ public class S991523983Fragment extends Fragment {
         // Required empty public constructor
     }
 
+    public static S991523983Fragment newInstance() {
+        return new S991523983Fragment();
+    }
+
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.

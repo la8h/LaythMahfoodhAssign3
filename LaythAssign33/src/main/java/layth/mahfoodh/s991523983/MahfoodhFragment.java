@@ -31,6 +31,9 @@ public class MahfoodhFragment extends Fragment {
     public MahfoodhFragment() {
         // Required empty public constructor
     }
+    public static MahfoodhFragment newInstance() {
+        return new MahfoodhFragment();
+    }
 
     /**
      * Use this factory method to create a new instance of

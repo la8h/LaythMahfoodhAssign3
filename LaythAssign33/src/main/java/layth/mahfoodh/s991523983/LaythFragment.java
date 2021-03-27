@@ -31,6 +31,10 @@ public class LaythFragment extends Fragment {
         // Required empty public constructor
     }
 
+    public static LaythFragment newInstance() {
+        return new LaythFragment();
+    }
+
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
