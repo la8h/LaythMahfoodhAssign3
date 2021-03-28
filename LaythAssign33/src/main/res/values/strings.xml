@@ -9,4 +9,19 @@
     <string name="tab_text_2">Tab 2</string>
     <string name="tab_text_3">Tab 3</string>
     <string name="frag1_text">Layth Mahfoodh S991423983</string>
+    <string name="prompt">Choose pen thickness</string>
+    <string-array name="penThick">
+        <item>Pen thick</item>
+        <item>4f</item>
+        <item>6f</item>
+        <item>8f</item>
+    </string-array>
+    <string-array name="penColor">
+        <item>Pen color</item>
+        <item>Black</item>
+        <item>Red</item>
+        <item>Green</item>
+
+
+    </string-array>
 </resources>

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LaythFragment">
+<LinearLayout
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,7 +21,51 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="244dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
         android:src="@drawable/image" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Spinner
+            android:id="@+id/pen_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/penColor"
+            android:prompt="@string/prompt"
+            android:spinnerMode="dropdown" />
+
+    <Spinner
+        android:id="@+id/pen_thick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/penThick"
+        android:prompt="@string/prompt"
+        android:spinnerMode="dropdown" />
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update" />
+    </LinearLayout>
+
+
+
+
+    <layth.mahfoodh.s991523983.CanvasView
+        android:id="@+id/canvas"
+        android:layout_width="match_parent"
+        android:layout_height="259dp"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+       android:layout_gravity="bottom|center"
+
+        android:text="Clear Canvas" />
+
 </LinearLayout>
+</ScrollView>
